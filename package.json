@@ -1,0 +1,23 @@
+{
+  "name": "led-rate-limiter",
+  "version": "1.0.0",
+  "description": "Dead simple, efficient rate limiting class.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lettex/led-rate-limiter.git"
+  },
+  "keywords": [
+    "rate",
+    "limit"
+  ],
+  "author": "Konstantin Safronov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lettex/led-rate-limiter/issues"
+  },
+  "homepage": "https://github.com/Lettex/led-rate-limiter#readme"
+}
