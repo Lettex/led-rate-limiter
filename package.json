@@ -1,6 +1,6 @@
 {
   "name": "led-rate-limiter",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Dead simple, efficient rate limiting class.",
   "main": "index.js",
   "scripts": {
