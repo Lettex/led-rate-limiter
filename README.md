@@ -17,6 +17,8 @@ ensures that the rate of requests does not exceed the specified limits within a 
 - `setIfNotExists(key, { rate, per })`: Sets the rate limit for a specific key if it does not already exist.
 - `checkLimit(key)`: Checks if a request can be made under the current rate limit for a specific key. Waits if the limit
   is reached.
+- `canMakeRequest(key,willMakeRequest = true)`: Checks if a request can be made under the current rate limit for a
+  specific key without waiting.
 
 ## Installation
 
@@ -27,7 +29,7 @@ npm install led-rate-limiter
 ## Usage
 
 ```javascript
-const rateLimiter = new RateLimiter();
+const rateLimiter = require('led-rate-limiter');
 rateLimiter.setLimit('myKey', {rate: 100, per: 60000}); // 100 requests per minute
 async function makeRequest() {
     await rateLimiter.checkLimit('myKey');
